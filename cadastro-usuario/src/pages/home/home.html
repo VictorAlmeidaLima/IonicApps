@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Cadastro de Usuário</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>Nome</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Data de Nascimento</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" ></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>E-mail</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+
+  <ion-item>
+    <ion-label>Usuário</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+
+    <ion-item>
+      <ion-label>Senha</ion-label>
+      <ion-input type="password" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Nível</ion-label>
+      <ion-select>
+        <ion-option value="Aprendiz">Aprendiz</ion-option>
+        <ion-option value="Junior">Junior</ion-option>
+        <ion-option value="Pleno">Pleno</ion-option>
+        <ion-option value="Full-Stack">Full-Stack</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <ion-card>
+          <ion-radio></ion-radio>
+          <ion-card-header>
+            Plano Anual
+          </ion-card-header>
+          <ion-card-content>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-6>
+        <ion-card>
+          <ion-radio></ion-radio>
+          <ion-card-header>
+            Plano Mensal
+          </ion-card-header>
+          <ion-card-content>
+
+          </ion-card-content>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+       <button ion-button full color="secondary" (click)="presentLoading()" >Salvar</button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button full color="danger">Cancelar</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
